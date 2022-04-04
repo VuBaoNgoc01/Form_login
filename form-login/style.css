@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: cornflowerblue;
+}
+
+.wrapper{
+    background: rgb(255, 255, 255);
+    text-align: center;
+    width: 350px;
+    padding: 50px 30px;
+    border-radius: 5px;
+}
+
+.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.wrapper form{
+    margin: 50px 0px;
+}
+
+form .field{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form .field.shake{
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100%{
+        margin-left: 0;
+    }
+    20%, 80%{
+        margin-left: -12px;
+    }
+    40%, 60%{
+        margin-left: 12px;
+    }
+}
+
+form .field .input-area{
+    position: relative;
+}
+
+form .field .input-area .error-icon:hover{
+    color: black;
+}
+
+form input{
+    outline: none;
+    height: 50px;
+    width: 100%;
+    padding: 0 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid rgb(145, 145, 145);
+    border-bottom-width: 2px;
+}
+
+form .field.error input{
+    border-color: rgb(199, 0, 0);
+}
+
+form input::placeholder{
+    color: rgb(206, 206, 206);
+    font-size: 17px;
+}
+
+form .field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+form .field .icon{
+    left: 15px;
+    font-size: 25px;
+    color: rgb(206, 206, 206);
+}
+
+form .field .error-icon{
+    right: 15px;
+    font-size: 25px;
+    color: rgb(199, 0, 0);
+}
+
+form .field .error-txt{
+    color: rgb(199, 0, 0);
+    margin-top: 5px;
+    text-align: left;
+}
+
+form .field .error{
+    display: none;
+}
+
+form .field.error .error{
+    display: block;
+}
+
+form  .pass-link{
+    text-align: left;
+    margin-top: -20px;
+}
+
+.wrapper a{
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.wrapper a:hover{
+    text-decoration: underline;
+}
+
+form input[type="submit"]{
+    margin-top: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background: rgb(106, 84, 247);
+    transition: 0.2s ease;
+}
+
+form input[type="submit"]:hover{
+    margin-top: 20px;
+    border: none;
+    background: rgb(58, 34, 212);
+    transition: 0.2s ease;
+}
+
+
+
+
+
+
