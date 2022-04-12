@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    position: relative;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+}
+
+.form{
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px #fff;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+}
+
+.form_items{
+    position: relative;
+    margin: 20px;
+}
+
+.form_items label {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #fff;
+    font-family: cursive;
+}
+
+.form_items input{
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    margin: 10px 0px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+    height: 35px;
+    outline: none;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+/*transition focus input + label*/
+
+.form_items input:focus ~ label {
+    top: -5px;
+    left: 0px;
+    padding: 0px 5px;
+    background-color: rgb(25, 25, 25);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+input:not(:placeholder-shown) + label{
+    top: -5px;
+    left: 0px;
+    padding: 0px 5px;
+    background-color: rgb(25, 25, 25);
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+/*style checl_box*/
+
+.form_items .check_box{
+    position: relative;
+    display: flex;
+    margin: 50px 0px;
+    top: 50px;
+    left: -50px;
+    font-size: 16px;
+    font-family: cursive;
+}
+
+.form_items .check_box > input{
+    position: relative;
+    display: flex;
+    left: 50px;
+    top: -15px;
+}
+
+/*style button*/
+
+button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: cursive;
+    margin: 50px 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    box-shadow: 0px 5px 10px #fff;
+    background-color: black;
+    color: #fff;
+}
+
+
+
+

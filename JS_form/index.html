@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form</title>
+</head>
+<body>
+        <div class="form">
+            <h1>Registration Form</h1>
+            <form action="">
+                <div class="form_items">
+                    <input type="text" id="first_name" name="first_name" placeholder=" ">
+                    <label for="first_name">First name</label>
+                </div>
+                <div class="form_items">
+                    <input type="text" id="last_name" name="last_name" placeholder=" ">
+                    <label for="last_name">Last name</label>
+                </div>
+                <div class="form_items">
+                    <input type="number" id="age" name="age" placeholder=" ">
+                    <label for="age">Age</label>
+                </div>
+                <div class="form_items">
+                    <input type="text" id="address" placeholder=" ">
+                    <label for="address">Address</label>
+                </div>
+                <div class="form_items">
+                    <div class="check_box">
+                         <input type="radio" name="male">Male
+                         <input type="radio" name="female">Female
+                    </div>
+                    <label for="">Gender</label>
+                </div>
+                <div class="form_items">
+                   <div class="check_box">
+                       <input type="checkbox" value="HTML">HTML
+                       <input type="checkbox" value="CSS">CSS
+                       <input type="checkbox" value="JS"> JS
+                   </div> 
+                   <label for="">Exp</label>
+                </div>
+                <div class="form_items">
+                    <button id="submit" onclick="sendForm()">submit</button>
+                    <button id="reset" onclick="resetForm()">reset</button> 
+                </div> 
+            </form>
+        </div>
+    <script src="./app.js"></script>
+</body>
+</html>
